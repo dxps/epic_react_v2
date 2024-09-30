@@ -1,0 +1,32 @@
+<html>
+
+</html>
+
+<body>
+    <div id="root"></div>
+
+    <script type="module">
+        import { createElement } from '/react.js'
+        import { createRoot } from '/react-dom/client.js'
+
+        const rootElement = document.getElementById('root')
+
+        // You're going to re-implement this code using React!
+        // 💣 So go ahead and delete this implementation (or comment it out for now)
+        // These three lines are similar to createElement
+        // 📜 https://react.dev/reference/react/createElement
+        // const element = document.createElement('div')
+        // element.className = 'container' // 💰 in React, this is also called the "className" prop
+        // element.textContent = 'Hello World' // 💰 in React, this is the "children" prop or a third argument
+        // This is similar to createRoot().render()
+        // rootElement.append(element)
+
+        const element = createElement('div', { className: 'container' }, 'Hello World')
+        createRoot(rootElement).render(element)
+    </script>
+
+    <!-- this is here to add automatic browser reloading as you save your work -->
+    <script type="module" src="epic_ws.js"></script>
+</body>
+
+</html>
